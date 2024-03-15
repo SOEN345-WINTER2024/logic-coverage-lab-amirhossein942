@@ -1,15 +1,15 @@
 public class CheckIt
 {
 
-   public static void checkIt (boolean a, boolean b, boolean c)
-   {  
+   public static String checkIt (boolean a, boolean b, boolean c)
+   {
       if (a || (b && c))
       {
-         System.out.println ("P is true");
+         return "P is true";
       }
       else
       {
-         System.out.println ("P isn't true");
+         return "P isn't true";
       }
    }
    
@@ -22,7 +22,7 @@ public class CheckIt
          System.out.println ("Usage: java checkIt v1 v2 v3");
          return;
       }
-   
+
       for (int i = 0; i< argv.length; i++)
       {
          inArr [i] = Boolean.parseBoolean(argv[i]);
